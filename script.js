@@ -6,10 +6,10 @@ document.getElementById("login-btn").addEventListener("click", function (event) 
    
    if (accountNumber.length === 11) {
       if (pin === 107754) {
-         console.log("Your pin is correct!");
+         window.location.href = "./main.html";
       }
       else {
-         console.log("Incorrect pin!");
+         alert("Incorrect pin!");
       }
    }
    else {
