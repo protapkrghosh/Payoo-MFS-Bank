@@ -27,7 +27,7 @@
          href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
          rel="stylesheet"
       />
-      
+
       <style>
          body {
             font-family: "Outfit", sans-serif;
@@ -36,65 +36,211 @@
    </head>
 
    <body class="bg-[#080808]">
-      <div class="max-w-md min-h-screen mx-auto py-6 bg-[#F4F5F7]">
-         <header class="px-5">
-            <nav class="flex justify-between">
-               <div class="flex">
-                  <img src="./assets/Group.png" alt="Group" class="w-12 mr-2" />
-                  <div>
-                     <h1 class="text-lg text-[rgba(8,8,8,0.90)] font-extrabold">$45000</h1>
-                  <p class="text-sm text-[rgba(8,8,8,0.50)]">Available Balance</p>
+      <div class="max-w-md min-h-screen mx-auto bg-[#F4F5F7]">
+         <div class="bg-white rounded-b-full pt-6">
+            <header class="px-5">
+               <nav class="flex justify-between">
+                  <div class="flex">
+                     <img
+                        src="./assets/Group.png"
+                        alt="Group"
+                        class="w-12 mr-2"
+                     />
+                     <div>
+                        <h1
+                           class="text-lg text-[rgba(8,8,8,0.90)] font-extrabold"
+                        >
+                           $45000
+                        </h1>
+                        <p class="text-sm text-[rgba(8,8,8,0.50)]">
+                           Available Balance
+                        </p>
+                     </div>
+                  </div>
+
+                  <button
+                     class="text-sm text-[rgba(8,8,8,0.40)] cursor-pointer border border-[rgba(8,8,8,0.10)] hover:border-[#0875f271] hover:bg-[rgba(8,116,242,0.05)] px-3 rounded-lg h-9 duration-400"
+                  >
+                     <i
+                        class="fa-solid fa-arrow-right-from-bracket rotate-180 mr-2"
+                     ></i>
+                     Log Out
+                  </button>
+               </nav>
+            </header>
+
+            <div class="border-b border-[rgba(8,8,8,0.20)] pt-4"></div>
+
+            <!-- Welcome Section -->
+            <section class="bg-white rounded-b-xl">
+               <div class="px-5">
+                  <h1 class="text-2xl font-bold mt-8 mb-3">
+                     🔥 Welcome to Payooo!
+                  </h1>
+                  <p class="text-[rgba(8,8,8,0.50)]">
+                     Enjoy easy and convenient financial services with us.
+                     Cashout charge is low and
+                  </p>
+               </div>
+
+               <!-- Card -->
+               <div class="cards grid grid-cols-3 gap-3 px-5 py-6">
+                  <div
+                     class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer"
+                  >
+                     <img
+                        src="./assets/wallet1.png"
+                        alt="Image"
+                        class="mx-auto"
+                     />
+                     <h3
+                        class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2"
+                     >
+                        Add Money
+                     </h3>
+                  </div>
+
+                  <div
+                     class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer"
+                  >
+                     <img
+                        src="./assets/send1.png"
+                        alt="Image"
+                        class="mx-auto"
+                     />
+                     <h3
+                        class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2"
+                     >
+                        Cash Out
+                     </h3>
+                  </div>
+
+                  <div
+                     class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer"
+                  >
+                     <img
+                        src="./assets/money1.png"
+                        alt="Image"
+                        class="mx-auto"
+                     />
+                     <h3
+                        class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2"
+                     >
+                        Transfer Money
+                     </h3>
+                  </div>
+
+                  <div
+                     class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer"
+                  >
+                     <img
+                        src="./assets/bonus1.png"
+                        alt="Image"
+                        class="mx-auto"
+                     />
+                     <h3
+                        class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2"
+                     >
+                        Get Bonus
+                     </h3>
+                  </div>
+
+                  <div
+                     class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer"
+                  >
+                     <img
+                        src="./assets/purse1.png"
+                        alt="Image"
+                        class="mx-auto"
+                     />
+                     <h3
+                        class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2"
+                     >
+                        Pay Bill
+                     </h3>
+                  </div>
+
+                  <div
+                     class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer"
+                  >
+                     <img
+                        src="./assets/transaction1.png"
+                        alt="Image"
+                        class="mx-auto"
+                     />
+                     <h3
+                        class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2"
+                     >
+                        Transactions
+                     </h3>
                   </div>
                </div>
+            </section>
+         </div>
 
-               <button class="text-sm text-[rgba(8,8,8,0.40)] cursor-pointer border border-[rgba(8,8,8,0.10)] hover:border-[#0875f271] hover:bg-[rgba(8,116,242,0.05)] px-3 rounded-lg h-9 duration-400">
-                  <i
-                     class="fa-solid fa-arrow-right-from-bracket rotate-180 mr-2"
-                  ></i>
-                  Log Out
-               </button>
-            </nav>
-         </header>
+         <!-- Add money input field -->
+         <section>
+            <h2
+               class="text-[rgba(8,8,8,0.90)] text-lg font-semibold mt-8 -mb-3 px-6"
+            >
+               Add Mony
+            </h2>
 
-         <div class="border-b border-[rgba(8,8,8,0.20)] mt-4"></div>
+            <div class="card-body">
+               <fieldset class="fieldset p-6 bg-white rounded-3xl">
+                  <label class="fieldset-label text-[#080808] font-medium"
+                     >Select A Bank</label
+                  >
+                  <select class="select w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12 mb-4">
+                     <option disabled selected class="">Select bank</option>
+                     <option value="Bkash">Bkash</option>
+                     <option value="Nagad">Nagad</option>
+                     <option value="Rocket">Rocket</option>
+                     <option value="DBBL">DBBL</option>
+                     <option value="FSIB">FSIB</option>
+                     <option value="Sonali">Sonali</option>
+                     <option value="Janata">Janata</option>
+                  </select>
 
-         <!-- Welcome Section -->
-         <section class="px-5">
-            <h1 class="text-2xl font-bold mt-8 mb-3">🔥 Welcome to Payooo!</h1>
-            <p class="text-[rgba(8,8,8,0.50)]">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+                  <label class="fieldset-label text-[#080808] font-medium"
+                     >Bank Account Number</label
+                  >
+                  <input
+                     type="number"
+                     value="90347689245"
+                     class="input w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12 [&::-webkit-inner-spin-button]:hidden mb-4"
+                     placeholder="Enter 11 digit account number"
+                     required
+                  />
 
-            <!-- Card -->
-            <div class="cards grid grid-cols-3 gap-3 my-6">
-               
-               <div class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer">
-                  <img src="./assets/wallet1.png" alt="Image" class="mx-auto">
-                  <h3 class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2">Add Money</h3>
-               </div>
+                  <label class="fieldset-label text-[#080808] font-medium"
+                     >Amount To Add</label
+                  >
+                  <input
+                     type="number"
+                     value="90347689245"
+                     class="input w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12 [&::-webkit-inner-spin-button]:hidden mb-4"
+                     placeholder="Add Amount to withdraw"
+                     required
+                  />
 
-               <div class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer">
-                  <img src="./assets/send1.png" alt="Image" class="mx-auto">
-                  <h3 class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2">Cash Out</h3>
-               </div>
+                  <label class="fieldset-label text-[#080808] font-medium"
+                     >Pin Number</label
+                  >
+                  <input
+                     type="text"
+                     value="107754"
+                     class="input w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12"
+                     placeholder="Enter 4 digit pin number"
+                     required
+                  />
 
-               <div class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer">
-                  <img src="./assets/money1.png" alt="Image" class="mx-auto">
-                  <h3 class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2">Transfer Money</h3>
-               </div>
-
-               <div class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer">
-                  <img src="./assets/bonus1.png" alt="Image" class="mx-auto">
-                  <h3 class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2">Get Bonus</h3>
-               </div>
-
-               <div class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer">
-                  <img src="./assets/purse1.png" alt="Image" class="mx-auto">
-                  <h3 class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2">Pay Bill</h3>
-               </div>
-
-               <div class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer">
-                  <img src="./assets/transaction1.png" alt="Image" class="mx-auto">
-                  <h3 class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2">Transactions</h3>
-               </div>
+                  <button
+                     class="btn mt-4 rounded-full bg-[#0874F2] hover:bg-[#0875f2e1] text-white h-12"
+                  >
+                     Add Money
+                  </button>
+               </fieldset>
             </div>
          </section>
       </div>
