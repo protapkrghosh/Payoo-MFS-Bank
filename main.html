@@ -5,9 +5,64 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Payoo MFS Bank</title>
       <link rel="shortcut icon" href="./assets/payoo.png" type="image/x-icon" />
+
+      <!-- Tailwind CSS -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+         rel="stylesheet"
+         type="text/css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+      <!-- Font Awesome -->
+      <script
+         src="https://kit.fontawesome.com/3179a557de.js"
+         crossorigin="anonymous"
+      ></script>
+
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+         rel="stylesheet"
+      />
+      
+      <style>
+         body {
+            font-family: "Outfit", sans-serif;
+         }
+      </style>
    </head>
+
    <body class="bg-[#080808]">
-      <h1>Yess</h1>
+      <div class="max-w-md min-h-screen mx-auto py-6 bg-[#F4F5F7]">
+         <header class="px-6">
+            <nav class="flex justify-between">
+               <div class="flex">
+                  <img src="./assets/Group.png" alt="Group" class="w-12 mr-2" />
+                  <div>
+                     <h1 class="text-lg text-[rgba(8,8,8,0.90)] font-extrabold">$45000</h1>
+                  <p class="text-sm text-[rgba(8,8,8,0.50)]">Available Balance</p>
+                  </div>
+               </div>
+
+               <button class="text-sm text-[rgba(8,8,8,0.40)] cursor-pointer border border-[rgba(8,8,8,0.10)] px-3 rounded-lg h-9">
+                  <i
+                     class="fa-solid fa-arrow-right-from-bracket rotate-180"
+                  ></i>
+                  Log Out
+               </button>
+            </nav>
+         </header>
+
+         <div class="border-b border-[rgba(8,8,8,0.20)] mt-4"></div>
+
+         <!-- Welcome Section -->
+         <section class="px-6">
+            <h1 class="text-2xl font-bold mt-8 mb-3">🔥 Welcome to Payooo!</h1>
+            <p class="text-[rgba(8,8,8,0.50)]">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+         </section>
+      </div>
    </body>
 </html>
-
