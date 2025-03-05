@@ -37,7 +37,7 @@
 
    <body class="bg-[#080808]">
       <div class="max-w-md min-h-screen mx-auto py-6 bg-[#F4F5F7]">
-         <header class="px-6">
+         <header class="px-5">
             <nav class="flex justify-between">
                <div class="flex">
                   <img src="./assets/Group.png" alt="Group" class="w-12 mr-2" />
@@ -47,9 +47,9 @@
                   </div>
                </div>
 
-               <button class="text-sm text-[rgba(8,8,8,0.40)] cursor-pointer border border-[rgba(8,8,8,0.10)] px-3 rounded-lg h-9">
+               <button class="text-sm text-[rgba(8,8,8,0.40)] cursor-pointer border border-[rgba(8,8,8,0.10)] hover:border-[#0875f271] hover:bg-[rgba(8,116,242,0.05)] px-3 rounded-lg h-9 duration-400">
                   <i
-                     class="fa-solid fa-arrow-right-from-bracket rotate-180"
+                     class="fa-solid fa-arrow-right-from-bracket rotate-180 mr-2"
                   ></i>
                   Log Out
                </button>
@@ -59,9 +59,43 @@
          <div class="border-b border-[rgba(8,8,8,0.20)] mt-4"></div>
 
          <!-- Welcome Section -->
-         <section class="px-6">
+         <section class="px-5">
             <h1 class="text-2xl font-bold mt-8 mb-3">🔥 Welcome to Payooo!</h1>
             <p class="text-[rgba(8,8,8,0.50)]">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+
+            <!-- Card -->
+            <div class="cards grid grid-cols-3 gap-3 my-6">
+               
+               <div class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer">
+                  <img src="./assets/wallet1.png" alt="Image" class="mx-auto">
+                  <h3 class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2">Add Money</h3>
+               </div>
+
+               <div class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer">
+                  <img src="./assets/send1.png" alt="Image" class="mx-auto">
+                  <h3 class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2">Cash Out</h3>
+               </div>
+
+               <div class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer">
+                  <img src="./assets/money1.png" alt="Image" class="mx-auto">
+                  <h3 class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2">Transfer Money</h3>
+               </div>
+
+               <div class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer">
+                  <img src="./assets/bonus1.png" alt="Image" class="mx-auto">
+                  <h3 class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2">Get Bonus</h3>
+               </div>
+
+               <div class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer">
+                  <img src="./assets/purse1.png" alt="Image" class="mx-auto">
+                  <h3 class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2">Pay Bill</h3>
+               </div>
+
+               <div class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer">
+                  <img src="./assets/transaction1.png" alt="Image" class="mx-auto">
+                  <h3 class="text-sm text-[rgba(8,8,8,0.70)] font-semibold group-hover:text-[#0874F2] duration-300 mt-2">Transactions</h3>
+               </div>
+            </div>
          </section>
       </div>
    </body>
