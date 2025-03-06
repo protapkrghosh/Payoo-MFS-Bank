@@ -12,15 +12,19 @@ document
          document.getElementById("mainBalance").textContent
       );
 
-      if (cashOutAmount <= 0) {
-         alert("Please enter your amount");
-      } else if (currentBalance >= cashOutAmount) {
-         if (cashOutAmount && cashOutPin && cashOutPin === 107754) {
+      if (!cashOutAmount || !cashOutPin) {
+         alert("Please enter pin and amount");
+      }
+      else if (cashOutPin === 107754) {
+         if (currentBalance >= cashOutAmount) {
             const remainingBalance = currentBalance - cashOutAmount;
             document.getElementById("mainBalance").textContent =
                remainingBalance;
          }
+         else {
+            alert("Insufficient amount");
+         }
       } else {
-         alert("Insufficient amount!");
+         alert("Please enter correct pin");
       }
    });
