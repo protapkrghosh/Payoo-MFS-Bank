@@ -50,7 +50,7 @@
                         <h1
                            class="text-lg text-[rgba(8,8,8,0.90)] font-extrabold"
                         >
-                           $45000
+                           $<span id="mainBalance">45000</span>
                         </h1>
                         <p class="text-sm text-[rgba(8,8,8,0.50)]">
                            Available Balance
@@ -208,6 +208,7 @@
                      >Bank Account Number</label
                   >
                   <input
+                     id="accountNumber"
                      type="number"
                      value="90347689245"
                      class="input w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12 [&::-webkit-inner-spin-button]:hidden mb-4"
@@ -219,8 +220,9 @@
                      >Amount To Add</label
                   >
                   <input
+                     id="amount"
                      type="number"
-                     value="90347689245"
+                     value="450"
                      class="input w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12 [&::-webkit-inner-spin-button]:hidden mb-4"
                      placeholder="Add Amount to withdraw"
                      required
@@ -230,6 +232,7 @@
                      >Pin Number</label
                   >
                   <input
+                     id="pinNumber"
                      type="text"
                      value="107754"
                      class="input w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12"
