@@ -86,6 +86,7 @@
                <!-- Card -->
                <div class="cards grid grid-cols-3 gap-3 px-5 py-6">
                   <div
+                     id="addMoney"
                      class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer"
                   >
                      <img
@@ -101,6 +102,7 @@
                   </div>
 
                   <div
+                     id="cashOutBtn"
                      class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer"
                   >
                      <img
@@ -178,8 +180,8 @@
             </section>
          </div>
 
-         <!-- Add money input field -->
-         <section>
+         <!-- Add money section -->
+         <section id="addAmountSection">
             <h2
                class="text-[rgba(8,8,8,0.90)] text-lg font-semibold mt-8 -mb-3 px-6"
             >
@@ -232,7 +234,7 @@
                      >Pin Number</label
                   >
                   <input
-                     id="pinNumber"
+                     id="addMoneyPin"
                      type="text"
                      value="107754"
                      class="input w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12"
@@ -241,7 +243,7 @@
                   />
 
                   <button
-                     id="add-money"
+                     id="addMoneyBtn"
                      class="btn mt-4 rounded-full bg-[#0874F2] hover:bg-[#0875f2e1] text-white h-12"
                   >
                      Add Money
@@ -249,8 +251,66 @@
                </fieldset>
             </div>
          </section>
+
+         <!-- Cash Out section -->
+         <section id="cashOutSection">
+            <h2
+               class="text-[rgba(8,8,8,0.90)] text-lg font-semibold mt-8 -mb-3 px-6"
+            >
+               Cash Out
+            </h2>
+
+            <div class="card-body">
+               <fieldset class="fieldset p-6 bg-white rounded-3xl">
+                  <label class="fieldset-label text-[#080808] font-medium"
+                     >Agent Number</label
+                  >
+                  <input
+                     id="accountNumber"
+                     type="number"
+                     value="090347689245"
+                     class="input w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12 [&::-webkit-inner-spin-button]:hidden mb-4"
+                     placeholder="Enter 11 digit number"
+                     required
+                  />
+
+                  <label class="fieldset-label text-[#080808] font-medium"
+                     >Amount</label
+                  >
+                  <input
+                     id="cashOutAmount"
+                     type="number"
+                     value="450"
+                     class="input w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12 [&::-webkit-inner-spin-button]:hidden mb-4"
+                     placeholder="Enter Amount to withdraw"
+                     required
+                  />
+
+                  <label class="fieldset-label text-[#080808] font-medium"
+                     >Pin Number</label
+                  >
+                  <input
+                     id="CashOutPin"
+                     type="text"
+                     value="107754"
+                     class="input w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12"
+                     placeholder="Enter 4 digit pin number"
+                     required
+                  />
+
+                  <button
+                     id="withdrawBtn"
+                     class="btn mt-4 rounded-full bg-[#0874F2] hover:bg-[#0875f2e1] text-white h-12"
+                  >
+                     Withdraw Money
+                  </button>
+               </fieldset>
+            </div>
+         </section>
       </div>
 
-      <script src="./script/add-money.js"></script>
+      <script src="./script/addMoney.js"></script>
+      <script src="./script/toggle.js"></script>
+      <script src="./script/cashOut.js"></script>
    </body>
 </html>

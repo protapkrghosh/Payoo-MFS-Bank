@@ -1,16 +1,15 @@
 document
-   .getElementById("add-money")
+   .getElementById("addMoneyBtn")
    .addEventListener("click", function (event) {
       event.preventDefault();
+      const addMoneyPin = parseFloat(document.getElementById("addMoneyPin").value);
       const amount = parseFloat(document.getElementById("amount").value);
-      const pin = parseFloat(document.getElementById("pinNumber").value);
       const currentBalance = parseFloat(
          document.getElementById("mainBalance").textContent
       );
-      console.log(amount, pin, currentBalance);
 
-      if (amount && pin) {
-         if (pin === 107754) {
+      if (amount && addMoneyPin) {
+         if (addMoneyPin === 107754) {
             const newBalance = currentBalance + amount;
             document.getElementById("mainBalance").textContent = newBalance;
          } else {
@@ -20,3 +19,5 @@ document
          alert("Enter valid amount and pin!");
       }
    });
+
+
