@@ -33,6 +33,12 @@
          body {
             font-family: "Outfit", sans-serif;
          }
+
+         #historyContainer h3 {
+            margin-top: 20px;
+            font-size: larger;
+            font-style: italic;
+         }
       </style>
    </head>
 
@@ -376,7 +382,9 @@
                Transaction History
             </h2>
 
-            <div id="historyContainer" class="px-6"></div>
+            <div id="historyContainer" class="px-6">
+               <h3 id="notFound" class="block">No transaction history</h3>
+            </div>
          </section>
       </div>
 

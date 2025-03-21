@@ -14,6 +14,11 @@ document
             setInnerTextByIDAndValue("mainBalance", newBalance);
 
             const historyContainer = document.getElementById("historyContainer");
+            const notFound = document.getElementById("notFound");
+
+            notFound.classList.remove('block');
+            notFound.classList.add('hidden');
+            
             const p = document.createElement("p");
             p.innerText = `
                Added $${amount} from ${account} account number.
