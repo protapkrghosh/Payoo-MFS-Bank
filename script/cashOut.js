@@ -7,7 +7,7 @@ document
       const cashOutPin = getInputValueByID("CashOutPin");
       const currentBalance = getInnerTextByID("mainBalance");
 
-      if (!accountNumber || !cashOutAmount || !cashOutPin) {
+      if (!agentNumber || !cashOutAmount || !cashOutPin) {
          alert("Please enter agent number, amount and pin");
       } else if (cashOutPin === 107754) {
          if (currentBalance >= cashOutAmount) {
