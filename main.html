@@ -33,12 +33,6 @@
          body {
             font-family: "Outfit", sans-serif;
          }
-
-         #historyContainer h3 {
-            margin-top: 20px;
-            font-size: larger;
-            font-style: italic;
-         }
       </style>
    </head>
 
@@ -204,6 +198,7 @@
                      >Select A Bank</label
                   >
                   <select
+                     id="allBank"
                      class="select w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12 mb-4"
                   >
                      <option disabled selected class="">Select bank</option>
@@ -383,7 +378,7 @@
             </h2>
 
             <div id="historyContainer" class="px-6">
-               <h3 id="notFound" class="block">No transaction history</h3>
+               <h3 id="notFound" class="block italic text-red-400 text-xl mt-6">No transaction history</h3>
             </div>
          </section>
       </div>

@@ -21,11 +21,13 @@ document
             notFound.classList.remove("block");
             notFound.classList.add("hidden");
 
-            const p = document.createElement("p");
-            p.innerText = `
-               Cashout $${cashOutAmount} from ${agentNumber} account number.
+            const div = document.createElement("div");
+            div.className = "bg-gray-200 rounded-lg my-4 p-4";
+            div.innerHTML = `
+               <h3>Cashout: $<span class="font-semibold">${cashOutAmount}</span></h3>
+               <p>Account Number: ${agentNumber}</p>
             `;
-            historyContainer.appendChild(p);
+            historyContainer.appendChild(div);
          } else {
             alert("Insufficient amount");
          }

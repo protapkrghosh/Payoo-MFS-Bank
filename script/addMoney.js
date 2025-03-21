@@ -7,6 +7,7 @@ document
       const amount = getInputValueByID("amount");
       const addMoneyPin = getInputValueByID("addMoneyPin");
       const currentBalance = getInnerTextByID("mainBalance");
+      const selectedBank = document.getElementById("allBank").value;
 
       if (account && amount && addMoneyPin) {
          if (amount < 0) {
@@ -25,11 +26,14 @@ document
             notFound.classList.remove("block");
             notFound.classList.add("hidden");
 
-            const p = document.createElement("p");
-            p.innerText = `
-               Added $${amount} from ${account} account number.
+            const div = document.createElement("div");
+            div.className = "bg-gray-200 rounded-lg my-4 p-5";
+            div.innerHTML = `
+               <h2>Added Money from <span class="font-semibold">${selectedBank}</span></h2>
+               <h3>Amount: $<span class="font-semibold">${amount}</span></h3>
+               <p>Account Number: ${account}</p>
             `;
-            historyContainer.appendChild(p);
+            historyContainer.appendChild(div)
          } else {
             alert("Incorrect pin!");
          }
