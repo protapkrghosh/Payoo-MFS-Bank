@@ -11,8 +11,7 @@ document
       } else if (cashOutPin === 107754) {
          if (currentBalance >= cashOutAmount) {
             const remainingBalance = currentBalance - cashOutAmount;
-            document.getElementById("mainBalance").textContent =
-               remainingBalance;
+            setInnerTextByIDAndValue("mainBalance", remainingBalance);
          } else {
             alert("Insufficient amount");
          }
