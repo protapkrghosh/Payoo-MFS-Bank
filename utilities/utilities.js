@@ -11,6 +11,11 @@ const setInnerTextByIDAndValue = (id, value) => {
    document.getElementById(id).textContent = value;
 }
 
+// Show & hide section
+const handleToggle = (id, status) => {
+   document.getElementById(id).style.display = status;
+};
+
 // Logout
 const handleLogout = () => {
    window.location.href = "./index.html";

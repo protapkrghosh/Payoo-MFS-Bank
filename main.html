@@ -120,6 +120,7 @@
                   </div>
 
                   <div
+                     id="transferMoneyBtn"
                      class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer"
                   >
                      <img
@@ -165,6 +166,7 @@
                   </div>
 
                   <div
+                     id="historyBtn"
                      class="box border border-[rgba(8,8,8,0.10)] hover:border-[#0874F2] hover:bg-[rgba(8,116,242,0.05)] rounded-xl p-3 text-center group duration-400 cursor-pointer"
                   >
                      <img
@@ -268,7 +270,7 @@
                      >Agent Number</label
                   >
                   <input
-                     id="accountNumber"
+                     id="agentNumber"
                      type="number"
                      value="01347689245"
                      class="input w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12 [&::-webkit-inner-spin-button]:hidden mb-4"
@@ -309,11 +311,80 @@
                </fieldset>
             </div>
          </section>
+
+         <!-- Transfer Money -->
+         <section id="transferMoneySection">
+            <h2
+               class="text-[rgba(8,8,8,0.90)] text-lg font-semibold mt-8 -mb-3 px-6"
+            >
+               Transfer Money
+            </h2>
+
+            <div class="card-body">
+               <fieldset class="fieldset p-6 bg-white rounded-3xl">
+                  <label class="fieldset-label text-[#080808] font-medium"
+                     >User Account Number</label
+                  >
+                  <input
+                     id="accountNumber"
+                     type="number"
+                     value="01347689245"
+                     class="input w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12 [&::-webkit-inner-spin-button]:hidden mb-4"
+                     placeholder="Enter 11 digit number"
+                     required
+                  />
+
+                  <label class="fieldset-label text-[#080808] font-medium"
+                     >Amount</label
+                  >
+                  <input
+                     id="transferAmount"
+                     type="number"
+                     value="500"
+                     class="input w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12 [&::-webkit-inner-spin-button]:hidden mb-4"
+                     placeholder="Enter amount to transfer"
+                     required
+                  />
+
+                  <label class="fieldset-label text-[#080808] font-medium"
+                     >Pin Number</label
+                  >
+                  <input
+                     id="transferPin"
+                     type="text"
+                     value="107754"
+                     class="input w-full rounded-full bg-[#F4F5F7] border-none focus:outline-dashed focus:outline-1 focus:outline-[#cfcfcf] pl-4 h-12"
+                     placeholder="Enter 6 digit pin number"
+                     required
+                  />
+
+                  <button
+                     id="sendNowBtn"
+                     class="btn mt-4 rounded-full bg-[#0874F2] hover:bg-[#0875f2e1] text-white h-12"
+                  >
+                     Send Now
+                  </button>
+               </fieldset>
+            </div>
+         </section>
+
+         <!-- Transaction History -->
+         <section id="transactionHistorySection">
+            <h2
+               class="text-[rgba(8,8,8,0.90)] text-lg font-semibold mt-8 -mb-3 px-6"
+            >
+               Transaction History
+            </h2>
+
+            <div id="historyContainer" class="px-6"></div>
+         </section>
       </div>
 
       <script src="./utilities/utilities.js"></script>
       <script src="./script/addMoney.js"></script>
       <script src="./script/toggle.js"></script>
       <script src="./script/cashOut.js"></script>
+      <script src="./script/transferMoney.js"></script>
+      <script src="./script/transactionHistory.js"></script>
    </body>
 </html>
