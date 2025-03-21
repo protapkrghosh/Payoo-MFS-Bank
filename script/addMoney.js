@@ -18,5 +18,3 @@ document
          alert("Enter valid amount and pin!");
       }
    });
-
-

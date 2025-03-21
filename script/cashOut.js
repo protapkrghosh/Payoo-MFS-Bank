@@ -8,14 +8,12 @@ document
 
       if (!cashOutAmount || !cashOutPin) {
          alert("Please enter pin and amount");
-      }
-      else if (cashOutPin === 107754) {
+      } else if (cashOutPin === 107754) {
          if (currentBalance >= cashOutAmount) {
             const remainingBalance = currentBalance - cashOutAmount;
             document.getElementById("mainBalance").textContent =
                remainingBalance;
-         }
-         else {
+         } else {
             alert("Insufficient amount");
          }
       } else {

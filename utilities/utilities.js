@@ -10,3 +10,8 @@ const getInnerTextByID = (id) => {
 const setInnerTextByIDAndValue = (id, value) => {
    document.getElementById(id).textContent = value;
 }
+
+// Logout
+const handleLogout = () => {
+   window.location.href = "./index.html";
+};
