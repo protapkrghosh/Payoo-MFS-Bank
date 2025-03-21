@@ -1,11 +1,15 @@
 document.getElementById("cashOutSection").style.display = "none";
 
 document.getElementById("addMoney").addEventListener("click", function () {
-   document.getElementById("addAmountSection").style.display = "block";
-   document.getElementById("cashOutSection").style.display = "none";
+   handleToggle("addAmountSection", "block");
+   handleToggle("cashOutSection", "none");
 });
 
 document.getElementById("cashOutBtn").addEventListener("click", function () {
-   document.getElementById("addAmountSection").style.display = "none";
-   document.getElementById("cashOutSection").style.display = "block";
+   handleToggle("addAmountSection", "none");
+   handleToggle("cashOutSection", "block");
 });
+
+const handleToggle = (id, status) => {
+   document.getElementById(id).style.display = status;
+};

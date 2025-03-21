@@ -2,15 +2,9 @@ document
    .getElementById("withdrawBtn")
    .addEventListener("click", function (event) {
       event.preventDefault();
-      const cashOutPin = parseFloat(
-         document.getElementById("CashOutPin").value
-      );
-      const cashOutAmount = parseFloat(
-         document.getElementById("cashOutAmount").value
-      );
-      const currentBalance = parseFloat(
-         document.getElementById("mainBalance").textContent
-      );
+      const cashOutPin = getInputValueByID("CashOutPin");
+      const cashOutAmount = getInputValueByID("cashOutAmount");
+      const currentBalance = getInnerTextByID("mainBalance");
 
       if (!cashOutAmount || !cashOutPin) {
          alert("Please enter pin and amount");
